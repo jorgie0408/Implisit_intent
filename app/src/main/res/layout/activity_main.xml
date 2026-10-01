@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        tools:context=".MainActivity">
+
+
+        <!-- JUDUL -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent Implisit"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Praktikum Android"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+
+        <!-- 1. MESSAGING -->
+
+        <Button
+            android:id="@+id/btnKirimPesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kirim Pesan"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- 2. ALARM -->
+
+        <Button
+            android:id="@+id/btnSetAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Alarm"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- 3. TIMER -->
+
+        <Button
+            android:id="@+id/btnSetTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Timer"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- 4. WEBSITE -->
+
+        <EditText
+            android:id="@+id/etURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan URL"
+            android:inputType="textUri"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnOpenURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buka Website"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- 5. CALENDAR -->
+
+        <Button
+            android:id="@+id/btnSetEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Event Calendar"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- 6. CAMERA -->
+
+        <Button
+            android:id="@+id/btnGetPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambil Foto"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:id="@+id/ivHasil"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Hasil foto" />
+
+
+        <!-- 7. GOOGLE MAPS -->
+
+        <Button
+            android:id="@+id/btnBukaMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buka Google Maps"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
