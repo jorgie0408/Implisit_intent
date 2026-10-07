@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnGetPhoto: Button
     private lateinit var btnBukaMaps: Button
 
+    private lateinit var btnProfile: Button
+
     private lateinit var etURL: EditText
     private lateinit var ivHasil: ImageView
 
@@ -129,12 +131,29 @@ class MainActivity : AppCompatActivity() {
         btnBukaMaps =
             findViewById(R.id.btnBukaMaps)
 
+        btnProfile =
+            findViewById(R.id.btnProfile)
+
         etURL =
             findViewById(R.id.etURL)
 
         ivHasil =
             findViewById(R.id.ivHasil)
 
+
+        // =========================================================
+// 8. MEMBUKA HALAMAN PROFILE
+// =========================================================
+
+        btnProfile.setOnClickListener {
+
+            val intent = Intent(
+                this,
+                ProfileActivity::class.java
+            )
+
+            startActivity(intent)
+        }
 
         // =========================================================
 // 1. MENGIRIM PESAN / SMS
@@ -573,6 +592,8 @@ class MainActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                 }
+
+
             }
         }
     }

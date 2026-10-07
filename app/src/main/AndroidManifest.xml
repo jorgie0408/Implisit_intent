@@ -38,6 +38,15 @@
         android:theme="@style/Theme.Implisit_intent">
 
         <activity
+            android:name=".RoleActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <activity
+
             android:name=".MainActivity"
             android:exported="true">
 
